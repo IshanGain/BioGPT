@@ -17,6 +17,29 @@
 
 ---
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Pipeline](#pipeline)
+- [Architecture](#architecture)
+- [Results](#results)
+  - [Model Comparison](#model-comparison-on-18-held-out-test-protocols)
+  - [Training Loss Summary](#training-loss-summary)
+  - [Training Curves](#training-curves)
+- [Dataset: OpenBioSet](#dataset-openbioscript)
+- [Data Augmentation](#data-augmentation)
+- [Fine-tuning Configuration](#fine-tuning-configuration)
+- [Repository Structure](#repository-structure)
+- [Installation](#installation)
+- [Quick Inference](#quick-inference)
+- [Key Findings](#key-findings)
+- [Limitations](#limitations)
+- [Future Work](#future-work)
+- [Citation](#citation)
+- [License](#license)
+
+---
+
 ## Overview
 
 **BioGPT** is the first LLM-based pipeline for automatically generating **BioScript** (`.bs`) code from natural language descriptions of biological laboratory protocols.
@@ -93,7 +116,7 @@ flowchart TD
 | Llama-3.2-3B | 3B | 5 | 73.6% | 0.344 | 14/18 | 9/18 | 9/18 | 12/18 | 18/18 |
 | **Qwen2.5-Coder-7B** | **7B** | **5** | **88.2%** | **0.354** | **17/18** | **14/18** | **12/18** | **14/18** | **18/18** |
 
-**Best model:** Qwen2.5-Coder-7B-Instruct fine-tuned with QLoRA for 5 epochs.
+> **Best model:** Qwen2.5-Coder-7B-Instruct fine-tuned with QLoRA for 5 epochs.
 
 ### Training Loss Summary
 
@@ -161,11 +184,14 @@ flowchart LR
     style F fill:#0f3460,color:#fff
 ```
 
-- **139** original training descriptions
-- **417** augmented variants (3 per description)
-- **556** total training examples
-- BioScript code remains **identical** for all variants
-- Only the natural language input is diversified
+| Stat | Count |
+|------|-------|
+| Original training descriptions | 139 |
+| Augmented variants (3 per description) | 417 |
+| Total training examples | 556 |
+| Coverage multiplier | 4× |
+
+BioScript code remains **identical** for all variants — only the natural language input is diversified.
 
 ---
 
@@ -190,14 +216,14 @@ flowchart TD
 | LoRA Alpha | 32 |
 | LoRA Dropout | 0.05 |
 | Learning Rate | 2e-4 |
-| Batch Size (effective) | 8 (1 x 8 accumulation) |
+| Batch Size (effective) | 8 (1 × 8 accumulation) |
 | Epochs | 5 |
 | LR Scheduler | Cosine |
 | Warmup Ratio | 0.05 |
 | Optimizer | adamw_8bit |
 | Max Seq Length | 2048 |
 | Quantization | 4-bit NF4 |
-| GPU | Kaggle T4 x2 |
+| GPU | Kaggle T4 × 2 |
 
 ---
 
@@ -257,6 +283,8 @@ cd BioGPT
 pip install -r requirements.txt
 ```
 
+---
+
 ## Quick Inference
 
 ```python
@@ -306,31 +334,31 @@ result = detect fluorescence on rxn for 10s
 
 ## Key Findings
 
-1. **Model size is the strongest predictor** — Qwen-7B outperforms all 3B models by a significant margin (88.2% vs 67.4% structural accuracy)
-2. **Code specialization outperforms general instruction tuning** — Qwen models outperform Llama-3B despite comparable parameter counts, validating the use of code-specialized base models for DSL generation
-3. **Overfitting occurs after step 50** — All models achieve best validation loss at step 50 and overfit beyond that, confirming dataset size (553 examples) as the primary bottleneck
-4. **Epoch count has minimal impact on 3B models** — 3 vs 5 epochs produces identical structural accuracy (67.4%), further confirming dataset size limitations
-5. **Zero repetitive outputs across all models** — Repetition penalty (1.3) completely eliminates looping behavior (18/18 non-repetitive)
+1. **Model size is the strongest predictor** — Qwen-7B outperforms all 3B models by a significant margin (88.2% vs 67.4% structural accuracy).
+2. **Code specialization outperforms general instruction tuning** — Qwen models outperform Llama-3B despite comparable parameter counts, validating the use of code-specialized base models for DSL generation.
+3. **Overfitting occurs after step 50** — All models achieve best validation loss at step 50 and overfit beyond that, confirming dataset size (553 examples) as the primary bottleneck.
+4. **Epoch count has minimal impact on 3B models** — 3 vs 5 epochs produces identical structural accuracy (67.4%), further confirming dataset size limitations.
+5. **Zero repetitive outputs across all models** — Repetition penalty (1.3) completely eliminates looping behavior (18/18 non-repetitive).
 
 ---
 
 ## Limitations
 
-- Small dataset (174 protocols) limits generalization to unseen protocol types
-- Compiler-based validation not yet integrated — structural accuracy is a proxy metric
-- Module and variable names differ from reference code (expected generative behavior)
-- Instructions section coverage ranges from 33% to 67% depending on model size
+- Small dataset (174 protocols) limits generalization to unseen protocol types.
+- Compiler-based validation not yet integrated — structural accuracy is a proxy metric.
+- Module and variable names differ from reference code (expected generative behavior).
+- Instructions section coverage ranges from 33% to 67% depending on model size.
 
 ---
 
 ## Future Work
 
-- Expand OpenBioSet with more protocol types and domains
-- Integrate BioScript compiler for execution-based evaluation (compilation rate metric)
-- Explore larger models (13B+) with extended fine-tuning
-- Implement RLHF using compiler feedback as a reward signal
-- Add few-shot prompting for improved naming consistency
-- Multi-turn refinement for iterative BioScript correction
+- Expand OpenBioSet with more protocol types and domains.
+- Integrate BioScript compiler for execution-based evaluation (compilation rate metric).
+- Explore larger models (13B+) with extended fine-tuning.
+- Implement RLHF using compiler feedback as a reward signal.
+- Add few-shot prompting for improved naming consistency.
+- Multi-turn refinement for iterative BioScript correction.
 
 ---
 
