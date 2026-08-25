@@ -1,7 +1,7 @@
 # BioGPT: LLM-Based BioScript Compiler Automation
 
 **Author:** Ishan Gain  
-**Institution:**Indian Institute of Technology, Roorkee   
+**Institution:** Indian Institute of Technology, Roorkee   
 **Date:** August 2026  
 
 ---
