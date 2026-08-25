@@ -22,6 +22,16 @@
 
 **Pipeline Architecture & Implementation:** Ishan Gain
 
+<div align="center">
+
+![Stars](https://img.shields.io/github/stars/IshanGain/BioGPT?style=for-the-badge&logo=github&logoColor=white&label=STARS&color=20BEFF)
+![Forks](https://img.shields.io/github/forks/IshanGain/BioGPT?style=for-the-badge&logo=github&logoColor=white&label=FORKS&color=7B61FF)
+![Last Commit](https://img.shields.io/github/last-commit/IshanGain/BioGPT?style=for-the-badge&logo=github&logoColor=white&label=LAST%20COMMIT&color=1DB954)
+![Repo Size](https://img.shields.io/github/repo-size/IshanGain/BioGPT?style=for-the-badge&logo=github&logoColor=white&label=REPO%20SIZE&color=e74c3c)
+![Issues](https://img.shields.io/github/issues/IshanGain/BioGPT?style=for-the-badge&logo=github&logoColor=white&label=ISSUES&color=f39c12)
+
+</div>
+
 <br/>
 
 </div>
