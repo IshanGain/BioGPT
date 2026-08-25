@@ -5,7 +5,7 @@
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&pause=1000&color=1DB954&center=true&vCenter=true&width=960&lines=Fine-tuned+LLMs+for+Automated+BioScript+DSL+Generation;Qwen2.5-Coder-7B+%E2%80%94+88.2%25+Structural+Accuracy+on+Held-Out+Protocols;QLoRA+%2B+Unsloth+%E2%80%94+4-bit+Quantized+Training+on+Kaggle+T4x2;174+Real-World+DMF+Protocols+%E2%80%94+OpenBioSet+Dataset;4+Models+Benchmarked+%E2%80%94+Full+Robustness+and+BLEU+Evaluation" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1000&color=1DB954&center=true&vCenter=true&width=960&lines=Fine-tuned+LLMs+for+Automated+BioScript+DSL+Generation;Qwen2.5-Coder-7B+%E2%80%94+88.2%25+Structural+Accuracy+on+Held-Out+Protocols;QLoRA+%2B+Unsloth+%E2%80%94+4-bit+Quantized+Training+on+Kaggle+T4x2;174+Real-World+DMF+Protocols+%E2%80%94+OpenBioSet+Dataset;4+Models+Benchmarked+%E2%80%94+Full+Robustness+and+BLEU+Evaluation" alt="Typing SVG" />
 </a>
 
 <br/><br/>
