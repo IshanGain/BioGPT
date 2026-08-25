@@ -24,47 +24,6 @@
 
 <br/>
 
-<table>
-  <tr>
-    <td align="center" width="160">
-      <img src="https://img.shields.io/badge/-DATASET-0f3d2e?style=flat-square&logoColor=white" /><br/><br/>
-      <b><font size="+3">174</font></b><br/>
-      <sub>Real-World Protocols</sub><br/>
-      <img src="https://img.shields.io/badge/OpenBioSet-DMF%20Protocols-0f3d2e?style=flat-square" />
-    </td>
-    <td align="center" width="160">
-      <img src="https://img.shields.io/badge/-BEST%20MODEL-0d2137?style=flat-square" /><br/><br/>
-      <b><font size="+3">88.2%</font></b><br/>
-      <sub>Structural Accuracy</sub><br/>
-      <img src="https://img.shields.io/badge/BLEU--1-0.354-0d2137?style=flat-square" />
-    </td>
-    <td align="center" width="160">
-      <img src="https://img.shields.io/badge/-ARCHITECTURE-1a1a2e?style=flat-square" /><br/><br/>
-      <b><font size="+3">7B</font></b><br/>
-      <sub>Parameters</sub><br/>
-      <img src="https://img.shields.io/badge/Qwen2.5--Coder--7B-QLoRA-1a1a2e?style=flat-square" />
-    </td>
-    <td align="center" width="160">
-      <img src="https://img.shields.io/badge/-AUGMENTATION-1a3a1a?style=flat-square" /><br/><br/>
-      <b><font size="+3">553</font></b><br/>
-      <sub>Training Examples</sub><br/>
-      <img src="https://img.shields.io/badge/4x-Coverage%20Multiplier-1a3a1a?style=flat-square" />
-    </td>
-    <td align="center" width="160">
-      <img src="https://img.shields.io/badge/-MODELS-2a1a0e?style=flat-square" /><br/><br/>
-      <b><font size="+3">4</font></b><br/>
-      <sub>Models Benchmarked</sub><br/>
-      <img src="https://img.shields.io/badge/Qwen%20%26%20Llama-Compared-2a1a0e?style=flat-square" />
-    </td>
-    <td align="center" width="160">
-      <img src="https://img.shields.io/badge/-OUTPUTS-1a0a0a?style=flat-square" /><br/><br/>
-      <b><font size="+3">18/18</font></b><br/>
-      <sub>Non-Repetitive</sub><br/>
-      <img src="https://img.shields.io/badge/RepPenalty-1.3-1a0a0a?style=flat-square" />
-    </td>
-  </tr>
-</table>
-
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
