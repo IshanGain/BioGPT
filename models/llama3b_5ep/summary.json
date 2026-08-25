@@ -1,0 +1,11 @@
+{
+  "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+  "output_name": "llama3b_5ep",
+  "epochs": 5,
+  "duration_min": 122,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "train_size": 553,
+  "val_size": 17,
+  "finished_at": "2026-08-21 08:32:15"
+}

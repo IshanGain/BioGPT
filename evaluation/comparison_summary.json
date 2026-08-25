@@ -1,0 +1,42 @@
+{
+  "Qwen2.5-Coder-3B-3ep": {
+    "avg_struct": 67.36111111111111,
+    "avg_bleu": 0.22338423654165906,
+    "has_module": 14,
+    "has_manifest": 10,
+    "has_instruct": 6,
+    "has_dispense": 10,
+    "non_rep": 18,
+    "total": 18
+  },
+  "Qwen2.5-Coder-3B-5ep": {
+    "avg_struct": 67.36111111111111,
+    "avg_bleu": 0.2606129952757137,
+    "has_module": 15,
+    "has_manifest": 13,
+    "has_instruct": 7,
+    "has_dispense": 9,
+    "non_rep": 18,
+    "total": 18
+  },
+  "Llama-3.2-3B-5ep": {
+    "avg_struct": 73.61111111111111,
+    "avg_bleu": 0.3443706582899339,
+    "has_module": 14,
+    "has_manifest": 9,
+    "has_instruct": 9,
+    "has_dispense": 12,
+    "non_rep": 18,
+    "total": 18
+  },
+  "Qwen2.5-Coder-7B-5ep": {
+    "avg_struct": 88.19444444444444,
+    "avg_bleu": 0.35404967239446616,
+    "has_module": 17,
+    "has_manifest": 14,
+    "has_instruct": 12,
+    "has_dispense": 14,
+    "non_rep": 18,
+    "total": 18
+  }
+}

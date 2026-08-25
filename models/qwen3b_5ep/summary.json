@@ -1,0 +1,11 @@
+{
+  "model_id": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "output_name": "qwen3b_5ep",
+  "epochs": 5,
+  "duration_min": 112,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "train_size": 553,
+  "val_size": 17,
+  "finished_at": "2026-08-20 10:41:56"
+}

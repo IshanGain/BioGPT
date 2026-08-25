@@ -1,0 +1,68 @@
+# BioGPT .gitignore
+# ==================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+.venv-1/                 # ← added: catches your specific secondary venv
+.venv*/                  # ← added: catch-all for any other venv variations
+venv/
+env/
+ENV/
+
+# IDEs and Editors
+.vscode/                 # VS Code workspace settings
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large model files & Weights (upload to HuggingFace Hub instead)
+models/*/lora_adapter/adapter_model.safetensors
+*.safetensors            # Catch-all for HuggingFace weights
+*.bin                    # Catch-all for older PyTorch weights
+*.pt                     # Catch-all for PyTorch weights
+*.pth                    # Catch-all for PyTorch weights
+
+# Cache files
+.cache/
+huggingface_tokenizers_cache/
+unsloth_compiled_cache/
+*.cache
+
+# API keys (never commit these)
+.env
+secrets.json
+kaggle.json
+upload.py 
+*.token 
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Frameworks (Streamlit/Gradio)
+.gradio/
+.streamlit/              # blocks the entire directory
+
+# Logs
+*.log
+logs/
+
+# Checkpoints (large, save to Kaggle/HuggingFace)
+models/*/checkpoints/
+
+# Windows
+*.lnk

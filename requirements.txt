@@ -1,0 +1,8 @@
+streamlit>=1.28.0
+torch>=2.0.0
+transformers>=4.44.0
+peft>=0.12.0
+accelerate>=0.34.0
+huggingface_hub>=0.24.0
+sentencepiece
+protobuf
