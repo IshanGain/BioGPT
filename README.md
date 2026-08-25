@@ -544,7 +544,7 @@ BioGPT/
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0a0a0a,100:0d2137&height=80&section=header&text=Installation%20%26%20Quick%20Inference&fontSize=24&fontColor=ffffff&fontAlignY=55&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0a0a0a,100:0d2137&height=80&section=header&text=Installation%20and%20Quick%20Inference&fontSize=24&fontColor=ffffff&fontAlignY=55&animation=fadeIn" width="100%"/>
 
 ## Installation
 
