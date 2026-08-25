@@ -2,16 +2,15 @@
 
 # BioGPT: LLM-Based BioScript Compiler Automation
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
-[![Unsloth](https://img.shields.io/badge/Unsloth-QLoRA-green?style=flat-square)](https://github.com/unslothai/unsloth)
-[![Kaggle](https://img.shields.io/badge/Kaggle-GPU%20T4x2-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://kaggle.com)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
-[![GitHub](https://img.shields.io/badge/GitHub-IshanGain%2FBioGPT-181717?style=flat-square&logo=github)](https://github.com/IshanGain/BioGPT)
-[![Model](https://img.shields.io/badge/Model-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/hellokitty1212/biogpt-qwen7b-lora)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/hellokitty1212/biogpt-qwen7b-lora)
+[![Kaggle](https://img.shields.io/badge/Kaggle-GPU%20T4x2-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://kaggle.com)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-**Author:** Ishan Gain &nbsp;|&nbsp; **Institution:** Indian Institute of Technology, Roorkee &nbsp;|&nbsp; **Date:** August 2026
+**Authors:** Sayan Mondal &nbsp;·&nbsp; Sanju De &nbsp;·&nbsp; Ishan Gain &nbsp;|&nbsp; **Institution:** Indian Institute of Technology, Roorkee &nbsp;|&nbsp; **Date:** August 2026
+
+**Pipeline Architecture & Implementation:** Ishan Gain
 
 </div>
 
