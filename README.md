@@ -20,7 +20,7 @@
 
 **Authors:** Sayan Mondal &nbsp;&middot;&nbsp; Sanju De &nbsp;&middot;&nbsp; Ishan Gain &nbsp;&nbsp;|&nbsp;&nbsp; **Institution:** Indian Institute of Technology, Roorkee &nbsp;&nbsp;|&nbsp;&nbsp; **Date:** August 2026
 
-**Pipeline Architecture & Implementation:** Ishan Gain
+[![Pipeline](https://img.shields.io/badge/Pipeline%20Architecture%20%26%20Implementation-Ishan%20Gain-1DB954?style=for-the-badge)](https://github.com/IshanGain)
 
 <br/>
 
